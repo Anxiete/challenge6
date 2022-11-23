@@ -1,0 +1,28 @@
+<section>
+    <header>
+        <h2>All customers</h2>
+    </header>
+</div>
+
+<div class="columns is-variable is-1 is-multiline">
+    <% @customers.each do |customer| %>
+    <div class="column is-one-quarter">
+        <div class="card is-variable">
+            <div class="card-content">
+                <h1><%= link_to customer.full_name, customer %></h1>
+                <h3><%= customer.phone_number %></h3>
+                <% if customer.image.present? %>
+                <div class="card-image">
+                    <figure class="image is-60x60">
+                        <%= image_tag customer.image %>
+                    </figure>
+                </div>
+                <% else %>
+                    <h1> No image </h1>
+                <% end %>
+            </div>
+        </div>
+    </div>
+    <% end %>
+</div>
+</section>

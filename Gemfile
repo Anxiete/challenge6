@@ -6,6 +6,7 @@ gem 'webpacker', '~> 5.4', '>= 5.4.3'
 gem 'activeadmin'
 gem 'devise'
 
+gem 'sassc-rails', '~> 2.1', '>= 2.1.2'
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.4"
 
