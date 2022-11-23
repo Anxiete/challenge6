@@ -5,6 +5,7 @@ ruby "3.0.3"
 gem 'webpacker', '~> 5.4', '>= 5.4.3'
 gem 'activeadmin'
 gem 'devise'
+gem 'image_processing'
 
 gem 'sassc-rails', '~> 2.1', '>= 2.1.2'
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"

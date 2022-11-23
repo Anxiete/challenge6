@@ -1,1 +1,17 @@
-<%= render "customer"%>
+<section>
+    <header>
+        <h2>All customers</h2>
+    </header>
+</div>
+<div class="is-multiline">
+    <h1><%= link_to "Customers with no emails", no_email_path %></h1>
+    <h1><%= link_to "Order customers by alphabetical", ordered_path %></h1>
+</div>
+<div class="columns is-variable is-1 is-multiline">
+<% @customers.each do | customer | %>
+    <%= render "customer", customer: customer %>
+<% end %>
+
+
+</div>
+</section>
